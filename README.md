@@ -6,10 +6,12 @@ This is a Django-based web application that allows users to input multiple parag
 
 ## Features
 
-- User Authentication (Signup, Login, Logout)
-- Paragraph Submission (Multiple paragraphs per submission)
-- Word Frequency Search (Top 10 paragraphs where a word occurs most frequently)
+- User Authentication (Login / Signup / Logout)
 - Password Reset via Email
+- Add Multiple Paragraphs in One Submission
+- Search Word Across Paragraphs
+- Show Top 10 Paragraphs Based on Word Frequency
+- Containerized with Docker
 
 ---
 
@@ -41,11 +43,17 @@ pip install -r requirements.txt
 ### 4 Apply Database Migrations
 
 python manage.py migrate
+python manage.py migrate
 
 ### 5 Run the Development Server
 
 python manage.py runserver
 
+Using Docker (Optional)
 
+Build Docker Image
+docker compose build
 
+Start the Containers
+docker compose up
 
